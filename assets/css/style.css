@@ -1,0 +1,244 @@
+*, html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+footer,
+header
+header
+{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.wrap {
+    display: block;
+    margin: 50px auto 40px;
+    max-width: 720px;
+    width: 100%;
+}
+
+header,
+.subscription-area,
+footer {
+    padding: 0 30px;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 46px;
+    font-weight: 700;
+    color: rgb(38, 57, 82);
+    line-height: normal;
+}
+
+header h3 {
+    font-size: 22px;
+    color: rgba(118, 94, 60, 0.953);
+    background: rgba(253, 249, 217, 0.51);
+    border-radius: 5px;
+    padding: 20px;
+    line-height: normal;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.subscription-area {
+    margin: 20px 0px;
+}
+
+.subscription-area h5 {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 20px;
+    color: rgba(47, 47, 47, 0.709804);
+}
+
+.subscription-area .fields {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.subscription-area .fields input {
+    font-size: 16px;
+    padding: 14px 18px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    flex: 39%;
+    margin-right: 5%;
+}
+
+.subscription-area .fields input:focus,
+.subscription-area .fields input:focus-visible {
+    border-color: #42B0E2;
+    outline: 0;
+}
+
+.subscription-area .fields input[name="email"]{
+    margin-right: 0;
+}
+
+.subscription-area .fields input[name="first_name"] {
+    background-image: url(../images/name.png);
+    background-repeat: no-repeat;
+    background-position: 97%;
+}
+
+.subscription-area .fields input[name="email"] {
+    background-image: url(../images/email2.png);
+        background-repeat: no-repeat;
+        background-position: 97%;
+}
+
+.subscription-area .submit {
+    width: 100%;
+    color: #fff;
+    background-color: rgb(61, 103, 158);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 16px 35px;
+}
+
+.subscription-area .submit:hover {
+    background-color: #325481;
+}
+
+.subscription-area>p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px 0;
+    color: rgba(47, 47, 47, 0.541176);
+}
+
+.subscription-area>img {
+    max-width: 100%;
+    width: 310px;
+    margin: 0px auto;
+    display: block;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+footer::before {
+    content: "";
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.7);
+    height: 1px;
+    width: 100%;
+    display: block;
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(160, 160, 160);
+    margin: 30px 0 80px;
+}
+
+/* @media (min-width: 1200px) {
+    .wrap {
+        width: 1170px;
+    }
+}
+
+@media (min-width: 992px) {
+    .wrap {
+        width: 970px;
+    }
+}*/
+
+@media (min-width: 768px) {
+    .wrap {
+        width: 750px;
+    }
+    
+    header,
+    .subscription-area,
+    footer {
+        padding: 0 30px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .wrap {
+        width: 100%;
+        max-width: 720px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    header,
+    .subscription-area,
+    footer {
+        padding: 0 15px;
+    }
+
+    .subscription-area .fields input {
+        flex: 100%;
+        margin-right: 0;
+    }
+
+    .subscription-area .submit {
+        line-height: 28px;
+        padding: 13px 28px;
+    }
+
+    .subscription-area .fields input[name="first_name"] {
+        margin-bottom: 20px;
+    }
+
+    
+} 
