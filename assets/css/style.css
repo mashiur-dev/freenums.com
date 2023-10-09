@@ -236,7 +236,7 @@ footer p {
     transition: width .25s ease, height .25s ease, font-size .25s ease;
     height: 35px;
     float: left;
-    width: 75%;
+    width: 0%;
     background-color: #428bca;
     text-align: center;
     color: #fff;
