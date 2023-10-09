@@ -185,6 +185,85 @@ footer p {
     margin: 30px 0 80px;
 }
 
+
+/*
+* Loading Page
+*/
+
+.loading {
+    text-align: center;
+    max-width: 680px;
+    padding-top: 30px;
+}
+
+.loading h1 {
+    color: rgb(38, 57, 82);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 85px;
+}
+
+.loading h2 {
+    color: rgb(38, 57, 82);
+    font-size: 40px;
+    line-height: 45px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.loading .progress {
+    text-align: center;
+    height: 35px;
+    background: #f5f5f5;
+    font-size: 14px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.loading .progress span {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    -webkit-background-size: 40px 40px;
+    background-size: 40px 40px;
+    -webkit-animation: progress-bar-stripes 2s linear infinite reverse;
+    -o-animation: progress-bar-stripes 2s linear infinite reverse;
+    animation: progress-bar-stripes 2s linear infinite reverse;
+    -webkit-transition: width .25s ease, height .25s ease, font-size .25s ease;
+    -moz-transition: width .25s ease, height .25s ease, font-size .25s ease;
+    -ms-transition: width .25s ease, height .25s ease, font-size .25s ease;
+    -o-transition: width .25s ease, height .25s ease, font-size .25s ease;
+    transition: width .25s ease, height .25s ease, font-size .25s ease;
+    height: 35px;
+    float: left;
+    width: 75%;
+    background-color: #428bca;
+    text-align: center;
+    color: #fff;
+    line-height: 35px;
+}
+
+.loading h4 {
+    color: rgba(47, 47, 47, 0.709804);
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.loading img {
+    max-width: 126px;
+    margin-top: 30px;
+}
+
+@keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0
+    }
+
+    to {
+        background-position: 0 0
+    }
+}
+
 /* @media (min-width: 1200px) {
     .wrap {
         width: 1170px;
@@ -238,6 +317,11 @@ footer p {
 
     .subscription-area .fields input[name="first_name"] {
         margin-bottom: 20px;
+    }
+
+    .wrap .loading {
+        padding: 0 20px;
+        padding-bottom: 100px;
     }
 
     
