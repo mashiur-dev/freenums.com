@@ -1,3 +1,28 @@
+let subsInputs = document.querySelectorAll(".fields input"),
+  subsButton = document.querySelector(".submit");
+
+subsButton.addEventListener('click', () => {
+  subsInputs.forEach(input => {
+    input.classList.remove("error");
+
+    if (input.value.trim() == "") {
+      input.classList.add("error");
+    } else if (
+      (input.type ==
+        "email" &&
+        !input.value.match(
+          /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+        ))
+    ) {
+      input.classList.add("error");
+    }
+  });
+});
+
+
+/**
+ * Loading page
+ */
 let texts = [
     "Establishing Connection...",
     "Locating Local Numerologist...",
